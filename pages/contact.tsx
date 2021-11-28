@@ -54,12 +54,18 @@ const Contact = () => {
             <div className={styles.email}>
               <ul>
                 <li className="email1">
-                  <ul className={styles.iconWithText}>
-                    <li>
-                      <FaEnvelope />
-                    </li>
-                    <li>ozge@izdusumpsikoloji.com</li>
-                  </ul>
+                  <a
+                    href="mailto:ozge@izdusumpsikoloji.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <ul className={styles.iconWithText}>
+                      <li>
+                        <FaEnvelope />
+                      </li>
+                      <li>ozge@izdusumpsikoloji.com</li>
+                    </ul>
+                  </a>
                 </li>
                 <li className="email2"></li>
               </ul>
@@ -68,7 +74,7 @@ const Contact = () => {
               <ul>
                 <li>
                   <a
-                    href="https://instagram.com/tango.teknik?igshid=ksg4wxslqht7"
+                    href="https://instagram.com/izdusum.psikoloji?utm_medium=copy_link"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Instagram"
@@ -83,7 +89,7 @@ const Contact = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.youtube.com/user/stylishtango"
+                    href="https://youtube.com/channel/UCM0t5_zfCehzosI5Y-7NY_g"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Youtube"
