@@ -8,6 +8,8 @@ import Expertise from "../components/Expertise";
 import styles from "../styles/Home.module.css";
 import { styled } from "../stitches.config";
 
+import ozgePhoto from "../public/images/ozgePhoto1.jpeg";
+
 const Text = styled("p", {
   fontFamily: "$system",
   color: "$hiContrast",
@@ -37,10 +39,16 @@ const Home: NextPage = () => {
       </Head>
       {/* <div className="spacer" style={{ height: "4rem" }}></div> */}
       <Hero />
+      <div className={styles.avatarWrapper}>
+        <div className={styles.avatar}>
+          <Image src={ozgePhoto} alt="Hero" layout="fill" objectFit="cover" />
+        </div>
+      </div>
       <div className={styles.calloutWrapper}>
         <Callout />
       </div>
       <Services />
+      <div className="spacer" style={{ height: "8rem" }}></div>
       <Expertise />
       <main className={styles.main}></main>
     </>

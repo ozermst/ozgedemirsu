@@ -25,9 +25,8 @@ const Callout = () => {
             <FaQuoteRight />
           </span>
         </p>
-        <p style={{ textAlign: "right", margin: "0.5rem 0" }}>
-          Özge Demirsu, Uzman Klinik Psikolog
-        </p>
+        <p style={{ textAlign: "right", margin: "0.5rem 0" }}>Özge Demirsu</p>
+        <p style={{ textAlign: "right" }}>Uzman Klinik Psikolog</p>
       </div>
     </>
   );

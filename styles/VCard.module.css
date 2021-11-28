@@ -1,5 +1,6 @@
 .card {
   composes: shadow from global;
+  height: 100%;
 }
 .body {
   padding: 0.5rem;

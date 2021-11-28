@@ -13,26 +13,22 @@ import services from "../data/services";
 const Services = () => {
   return (
     <>
-      <div className={styles.services}>
-        {services.map(function (service) {
-          return (
-            <div key={service.id}>
-              <VCard
-                title={service.title}
-                subTitle={service.subTitle}
-                content={service.content}
-                imageUrl={service.imageUrl}
-              />
-            </div>
-          );
-        })}
+      <div className={styles.servicesWrapper}>
+        <div className={styles.services}>
+          {services.map(function (service) {
+            return (
+              <div key={service.id}>
+                <VCard
+                  title={service.title}
+                  subTitle={service.subTitle}
+                  content={service.content}
+                  imageUrl={service.imageUrl}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
-      {/*       <div className={styles.services}>
-        <VCard image={adult} title="Yetişkin terapisi" />
-        <VCard image={youngGirl} title="Ergen terapisi" />
-        <VCard image={family} title="Aile terapisi" />
-        <VCard image={pupil} title="Çocuk terapisi" />
-      </div> */}
     </>
   );
 };

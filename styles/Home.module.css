@@ -2,3 +2,28 @@
   display: flex;
   justify-content: center;
 }
+.avatarWrapper {
+  composes: container from global;
+  display: flex;
+  justify-content: center;
+}
+.avatar {
+  composes: rounded-full from global;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+  overflow: hidden;
+  margin-top: -100px;
+}
+@media screen and (min-width: 640px) {
+  .avatarWrapper {
+    display: flex;
+    justify-content: start;
+  }
+}

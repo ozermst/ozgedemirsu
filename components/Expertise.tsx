@@ -9,11 +9,13 @@ const Expertise = () => {
     <>
       <div className={styles.expertiseWrapper}>
         <div className={styles.expertise}>
-          <div className={styles.avatar}>
-            <Image src={image} alt="Hero" layout="fill" objectFit="cover" />
+          <div className={styles.avatarWrapper}>
+            <div className={styles.avatar}>
+              <Image src={image} alt="Hero" layout="fill" objectFit="cover" />
+            </div>
           </div>
-          <div className={styles.content}>
-            <div>
+          <div className={styles.contentWrapper}>
+            <div className={styles.content}>
               <p>
                 Psikolojik Danışmanlık bir süreç olmakla birlikte; süresi
                 danışanların ihtiyaçları doğrultusunda değişkenlik gösterir. Bu
