@@ -51,6 +51,7 @@
 .rounded-full {
   border-radius: 9999px;
 }
+/*----------------------------------------------------*/
 /* Border width
 /*----------------------------------------------------*/
 .border-0 {
@@ -67,6 +68,24 @@
 }
 .border {
   border-width: 1px;
+}
+/*----------------------------------------------------*/
+/* Border style
+/*----------------------------------------------------*/
+.border-solid {
+  border-style: solid;
+}
+.border-dashed {
+  border-style: dashed;
+}
+.border-dotted {
+  border-style: dotted;
+}
+.border-double {
+  border-style: double;
+}
+.border-none {
+  border-style: none;
 }
 /*----------------------------------------------------*/
 /* BOX SHADOWS                                           

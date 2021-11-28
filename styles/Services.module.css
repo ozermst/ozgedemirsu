@@ -1,7 +1,8 @@
 .services {
   composes: container from global;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
   grid-gap: 16px;
   justify-content: center;
   padding: 2rem 0;
