@@ -1,16 +1,24 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/* *************************************************** */
+/* CSS NORMALIZE                                       
+/* *************************************************** */
+@import "./styleSystem/normalize.css";
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+/* *************************************************** */
+/* VARIABLES                                          
+/* *************************************************** */
+@import "./styleSystem/variables.css";
 
-* {
-  box-sizing: border-box;
-}
+/* *************************************************** */
+/* UTILITIES
+/* *************************************************** */
+@import "./styleSystem/utilities.css";
+
+/* *************************************************** */
+/* TYPOGRAPHY
+/* *************************************************** */
+@import "./styleSystem/typography.css";
+
+/* *************************************************** */
+/* THEME
+/* *************************************************** */
+@import "./styleSystem/theme.css";

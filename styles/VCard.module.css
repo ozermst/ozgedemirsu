@@ -1,0 +1,10 @@
+.card {
+  composes: shadow from global;
+}
+.body {
+  padding: 0.5rem;
+}
+.image {
+  position: relative;
+  height: 200px;
+}
