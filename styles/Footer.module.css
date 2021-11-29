@@ -1,8 +1,8 @@
 .footerWrapper {
-  border-top-style: solid;
-  border-top-width: 2px;
+  /* border-top-style: solid;
+  border-top-width: 2px; */
   background-color: black;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding: 1rem;
 }
 .footerTop {

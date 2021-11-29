@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Callout from "../components/Callout";
 import Services from "../components/Services";
 import Expertise from "../components/Expertise";
+import Quotes from "../components/Quotes";
 import styles from "../styles/Home.module.css";
 import { styled } from "../stitches.config";
 
@@ -48,8 +49,11 @@ const Home: NextPage = () => {
         <Callout />
       </div>
       <Services />
-      <div className="spacer" style={{ height: "8rem" }}></div>
+      <div className="spacer" style={{ height: "5rem" }}></div>
       <Expertise />
+      <div className="spacer" style={{ height: "3rem" }}></div>
+      <Quotes />
+      <div className="spacer" style={{ height: "3rem" }}></div>
     </>
   );
 };

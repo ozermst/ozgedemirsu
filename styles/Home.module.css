@@ -24,6 +24,6 @@
 @media screen and (min-width: 640px) {
   .avatarWrapper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
