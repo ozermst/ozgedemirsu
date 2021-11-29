@@ -19,15 +19,15 @@ const Contact = () => {
       </Head>
       {/* <div className="spacer" style={{ height: "4rem" }}></div> */}
       <Hero />
-      <main className={styles.main}>
-        <div className={styles.about}>
+      <div className={styles.contactWrapper}>
+        <div className={styles.contact}>
           <div className="leftSideBar">
             <div className={styles.avatarWrapper}>
               <div className={styles.avatar}>
                 <Image src={image} alt="Hero" layout="fill" objectFit="cover" />
               </div>
             </div>
-            <div className={styles.blank}></div>
+            <div className={styles.spacer}></div>
             <div className={styles.bio}>
               <ul>
                 <li>Uzm. Psk. özge Demirsu</li>
@@ -121,16 +121,12 @@ const Contact = () => {
               <iframe
                 className={styles.map}
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1505.6862367096228!2d29.041463000000004!3d40.99522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x58aabbe3a3b12115!2zR8O8cmF5IMSwxZ8gSGFuxLE!5e0!3m2!1sen!2str!4v1636901720722!5m2!1sen!2str"
-                // width="100%"
-                // height="100%"
-                // style="border:0;"
-                // allowfullscreen=""
                 loading="lazy"
               ></iframe>
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 };

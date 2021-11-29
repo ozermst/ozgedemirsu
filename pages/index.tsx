@@ -50,7 +50,6 @@ const Home: NextPage = () => {
       <Services />
       <div className="spacer" style={{ height: "8rem" }}></div>
       <Expertise />
-      <main className={styles.main}></main>
     </>
   );
 };
