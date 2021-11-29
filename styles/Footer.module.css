@@ -1,0 +1,21 @@
+.footerWrapper {
+  border-top-style: solid;
+  border-top-width: 2px;
+  background-color: black;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.footerTop {
+  background-color: black;
+}
+.logoWrapper {
+  padding: 1rem;
+}
+.logo {
+  position: relative;
+  height: 100px;
+}
+.navBar {
+  color: white;
+  text-align: center;
+}
