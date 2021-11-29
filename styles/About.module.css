@@ -16,6 +16,12 @@
   overflow: hidden;
   margin-top: -50px;
 }
+.contentWrapper {
+  padding-top: 2rem;
+}
+.contentWrapper p {
+  margin: 0.5rem 0;
+}
 .iconWithText {
   display: flex;
   align-items: center;

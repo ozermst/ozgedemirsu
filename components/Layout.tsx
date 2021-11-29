@@ -9,6 +9,7 @@ const Layout: React.FunctionComponent = (props) => {
       <IconContext.Provider value={{ className: "icon" }}>
         <Header />
         <main>{props.children}</main>
+        <div className="spacer" style={{ height: "2rem" }}></div>
         <Footer />
       </IconContext.Provider>
     </>
