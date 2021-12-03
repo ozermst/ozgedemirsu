@@ -38,7 +38,6 @@ const Home: NextPage = () => {
         <meta name="description" content="İzdüşüm psikoloji" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <div className="spacer" style={{ height: "4rem" }}></div> */}
       <Hero />
       <div className={styles.avatarWrapper}>
         <div className={styles.avatar}>
