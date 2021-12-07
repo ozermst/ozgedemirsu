@@ -1,24 +1,24 @@
 /* *************************************************** */
 /* CSS NORMALIZE                                       
 /* *************************************************** */
-@import "./styleSystem/normalize.css";
+@import "./system/normalize.css";
 
 /* *************************************************** */
 /* VARIABLES                                          
 /* *************************************************** */
-@import "./styleSystem/variables.css";
+@import "./system/variables.css";
 
 /* *************************************************** */
 /* UTILITIES
 /* *************************************************** */
-@import "./styleSystem/utilities.css";
+@import "./system/utilities.css";
 
 /* *************************************************** */
 /* TYPOGRAPHY
 /* *************************************************** */
-@import "./styleSystem/typography.css";
+@import "./system/typography.css";
 
 /* *************************************************** */
 /* THEME
 /* *************************************************** */
-@import "./styleSystem/theme.css";
+@import "./system/theme.css";

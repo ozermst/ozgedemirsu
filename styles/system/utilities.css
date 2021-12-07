@@ -1,0 +1,103 @@
+/*----------------------------------------------------*/
+/* Layout                                           
+/*----------------------------------------------------*/
+/* xs: 0,
+/* sm: 640, => @media (min-width: 640px) { ... }
+/* md: 768, => @media (min-width: 768px) { ... }
+/* lg: 1024, => @media (min-width: 1024px) { ... }
+/* xl: 1280, => @media (min-width: 1280px) { ... }
+/* 2xl: 1536, => @media (min-width: 1536px) { ... }
+/*----------------------------------------------------*/
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media only screen and (max-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+/*----------------------------------------------------*/
+/* BORDERS                                           
+/*----------------------------------------------------*/
+/* Border radius
+/*----------------------------------------------------*/
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+/*----------------------------------------------------*/
+/* Border width
+/*----------------------------------------------------*/
+.border-0 {
+  border-width: 0px;
+}
+.border-2 {
+  border-width: 2px;
+}
+.border-4 {
+  border-width: 4px;
+}
+.border-8 {
+  border-width: 8px;
+}
+.border {
+  border-width: 1px;
+}
+/*----------------------------------------------------*/
+/* Border style
+/*----------------------------------------------------*/
+.border-solid {
+  border-style: solid;
+}
+.border-dashed {
+  border-style: dashed;
+}
+.border-dotted {
+  border-style: dotted;
+}
+.border-double {
+  border-style: double;
+}
+.border-none {
+  border-style: none;
+}
+/*----------------------------------------------------*/
+/* BOX SHADOWS                                           
+/*----------------------------------------------------*/
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}

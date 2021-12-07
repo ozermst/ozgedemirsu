@@ -1,42 +1,36 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import styles from "../styles/Footer.module.css";
-
 import logo from "../public/images/logo2.png";
 
 const Footer = () => {
   const router = useRouter();
   return (
     <>
-      <div className={styles.footerWrapper}>
-        <div className={styles.footer}>
-          <div className={styles.footerTop}>
-            <div className={styles.navBar}>
-              <ul className={styles.navLinks}>
-                <li className={router.pathname == "/" ? styles.active : ""}>
+      <div className="footerWrapper">
+        <div className="footer">
+          <div className="footerTop">
+            <div className="navBar">
+              <ul className="navLinks">
+                <li className={router.pathname == "/" ? "active" : ""}>
                   <Link href="/" passHref>
                     <a id="homeLink">Anasayfa</a>
                   </Link>
                 </li>
-                <li
-                  className={router.pathname == "/about" ? styles.active : ""}
-                >
+                <li className={router.pathname == "/about" ? "active" : ""}>
                   <Link href="/about" passHref>
                     <a id="aboutLink">Hakkımda</a>
                   </Link>
                 </li>
-                <li
-                  className={router.pathname == "/contact" ? styles.active : ""}
-                >
+                <li className={router.pathname == "/contact" ? "active" : ""}>
                   <Link href="/contact" passHref>
                     <a id="contactLink">İletişim</a>
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className={styles.logoWrapper}>
-              <div className={styles.logo}>
+            <div className="logoWrapper">
+              <div className="logo">
                 <Image
                   src={logo}
                   alt="Logo"
@@ -46,10 +40,32 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className={styles.footerBottom}></div>
-          <div className={styles.copyright}></div>
+          <div className="footerBottom"></div>
+          <div className="copyright"></div>
         </div>
       </div>
+      <style jsx>
+        {`
+          .footerWrapper {
+            background-color: black;
+            padding: 1rem;
+          }
+          .footerTop {
+            background-color: black;
+          }
+          .logoWrapper {
+            padding: 1rem;
+          }
+          .logo {
+            position: relative;
+            height: 100px;
+          }
+          .navBar {
+            color: white;
+            text-align: center;
+          }
+        `}
+      </style>
     </>
   );
 };

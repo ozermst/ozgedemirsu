@@ -1,8 +1,0 @@
-.callout {
-  composes: rounded from global;
-  composes: shadow from global;
-  border-style: solid;
-  border-color: var(--gray-300);
-  padding: 1.3rem;
-  margin: 5rem 1rem;
-}
