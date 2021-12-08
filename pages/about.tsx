@@ -22,36 +22,35 @@ phone,
 email
 }`;
 
-export default function About({ profiles }) {
-  // const profile = profiles[0];
+export default function About({ data }: { data: any }) {
   return (
     <>
       <Head>
-        <title>{profiles.jobTitle + " " + profiles.name + " - hakkımda"}</title>
+        <title>{data.jobTitle + " " + data.name + " - hakkımda"}</title>
         <meta
           name="description"
-          content={profiles.jobTitle + " " + profiles.name + " - hakkımda"}
+          content={data.jobTitle + " " + data.name + " - hakkımda"}
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Cover
-        profileImageUrl={urlFor(profiles.image).url()}
+        profileImageUrl={urlFor(data.image).url()}
         coverImageUrl="/images/hero.jpeg"
       />
       <div className="spacer"></div>
       <div className="about container">
         <div className="profile">
-          <div className="fullName">{profiles.name}</div>
-          <div className="title">{profiles.jobTitle}</div>
+          <div className="fullName">{data.name}</div>
+          <div className="title">{data.jobTitle}</div>
           <div className="address">
             <ul>
-              <li className="street1">{profiles.street1}</li>
-              <li className="street2">{profiles.street2}</li>
-              <li className="street3">{profiles.street3}</li>
-              <li className="postCode">{profiles.postCode}</li>
-              <li className="district">{profiles.district}</li>
-              <li className="city">{profiles.city}</li>
-              <li className="country">{profiles.country}</li>
+              <li className="street1">{data.street1}</li>
+              <li className="street2">{data.street2}</li>
+              <li className="street3">{data.street3}</li>
+              <li className="postCode">{data.postCode}</li>
+              <li className="district">{data.district}</li>
+              <li className="city">{data.city}</li>
+              <li className="country">{data.country}</li>
             </ul>
           </div>
           <div className="phones">
@@ -61,7 +60,7 @@ export default function About({ profiles }) {
                   <li>
                     <FaPhoneSquareAlt />
                   </li>
-                  <li>{profiles.phone}</li>
+                  <li>{data.phone}</li>
                 </ul>
               </li>
               <li className="phone2"></li>
@@ -79,7 +78,7 @@ export default function About({ profiles }) {
                     <li>
                       <FaEnvelope />
                     </li>
-                    <li>{profiles.email}</li>
+                    <li>{data.email}</li>
                   </ul>
                 </a>
               </li>
@@ -121,7 +120,7 @@ export default function About({ profiles }) {
           </div>
         </div>
         <div className="content">
-          <PortableText blocks={profiles.about} />
+          <PortableText blocks={data.about} />
         </div>
       </div>
 
@@ -154,6 +153,6 @@ export default function About({ profiles }) {
 }
 
 export async function getStaticProps() {
-  const profiles = await sanityClient.fetch(profilesQuery);
-  return { props: { profiles } };
+  const data = await sanityClient.fetch(profilesQuery);
+  return { props: { data } };
 }

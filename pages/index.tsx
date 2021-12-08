@@ -13,10 +13,10 @@ import tolstoyImage from "../public/images/tolstoy.jpeg";
 
 const allDataQuery = `*[_type in ["siteData", "profiles", "services"]]`;
 
-const Home: NextPage = ({ data }) => {
-  const siteData = data.filter((record) => record._type == "siteData");
-  const profiles = data.filter((record) => record._type == "profiles");
-  const services = data.filter((record) => record._type == "services");
+const Home = ({ data }: { data: any }) => {
+  const siteData = data.filter((record: any) => record._type == "siteData");
+  const profiles = data.filter((record: any) => record._type == "profiles");
+  const services = data.filter((record: any) => record._type == "services");
 
   return (
     <>
@@ -40,12 +40,12 @@ const Home: NextPage = ({ data }) => {
       </div>
       <div className="spacer"></div>
       <div className="services container">
-        {services.map((service) => (
+        {services.map((service: any) => (
           <div className="card shadow" key={service._id}>
             <div className="image">
               <Image
-                src={urlFor(service.image).url()}
-                alt=""
+                src={urlFor(service.image).url() as any}
+                alt="fuck"
                 layout="fill"
                 objectFit="cover"
               />
