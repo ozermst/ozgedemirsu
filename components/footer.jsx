@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import logo from "../public/images/logo2.png";
 
-const Footer = () => {
+export default function Footer() {
   const router = useRouter();
   return (
     <>
@@ -69,6 +69,4 @@ const Footer = () => {
       </style>
     </>
   );
-};
-
-export default Footer;
+}
