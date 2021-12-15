@@ -7,7 +7,7 @@ export default function Hero({ heroTitle, heroImageUrl }) {
         <div className="image">
           <Image
             src={heroImageUrl}
-            alt="fuck"
+            alt="hero image"
             layout="fill"
             objectFit="cover"
           />
@@ -25,6 +25,7 @@ export default function Hero({ heroTitle, heroImageUrl }) {
           }
           @media screen and (min-width: 640px) {
             .hero {
+              height: 80vh;
             }
           }
         `}
