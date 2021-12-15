@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MenuIcon } from "./MenuIcon";
+import { MenuIcon } from "./menu-icon";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const MenuToggler = () => {

@@ -1,5 +1,5 @@
 import { styled } from "@stitches/react";
-import { violet, mauve, blackA } from "@radix-ui/colors";
+import { violet, mauve, black } from "@radix-ui/colors";
 import * as TogglePrimitive from "@radix-ui/react-toggle";
 
 const StyledToggle = styled(TogglePrimitive.Root, {
@@ -15,7 +15,7 @@ const StyledToggle = styled(TogglePrimitive.Root, {
   alignItems: "center",
   justifyContent: "center",
 
-/*   boxShadow: `0 2px 10px ${blackA.blackA7}`,
+  /*   boxShadow: `0 2px 10px ${blackA.blackA7}`,
   "&:hover": { backgroundColor: violet.violet3 },
   "&[data-state=on]": {
     backgroundColor: violet.violet6,

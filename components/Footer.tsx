@@ -48,6 +48,7 @@ const Footer = () => {
         {`
           .footerWrapper {
             background-color: black;
+            margin-top: 2rem;
             padding: 1rem;
           }
           .footerTop {

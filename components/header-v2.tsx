@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import MenuToggler from "./MenuToggler";
+import MenuToggler from "./menu-toggler";
 import toggleMenu from "../js/toggleMenu";
 
 const pages = [
@@ -54,25 +54,6 @@ const Header = () => {
                   <a id="contactLink">İletişim</a>
                 </Link>
               </li>
-
-              {/*               
-              {pages.map(function (page) {
-                return (
-                  <li
-                    className={
-                      router.pathname == "/"
-                        ? "rounded-full border-2 active"
-                        : " "
-                    }
-                    key={page.id}
-                  >
-                    <Link href={page.url} passHref>
-                      <a id="homeLink">{page.name}</a>
-                    </Link>
-                  </li>
-                );
-              })} 
-              */}
             </ul>
           </div>
         </nav>
@@ -90,6 +71,7 @@ const Header = () => {
           </ul>
         </div>
       </header>
+
       <style jsx>{`
         .header {
           position: fixed;
@@ -99,7 +81,6 @@ const Header = () => {
           z-index: 10;
           width: 100%;
           min-height: 55px;
-          // min-height: 100px;
           background-color: black;
           color: white;
           padding: 0.5rem 0;

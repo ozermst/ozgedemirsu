@@ -3,9 +3,8 @@ import createSchema from "part:@sanity/base/schema-creator";
 
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
-import siteData from "./siteData";
-import profiles from "./profiles";
-import services from "./services";
+// import author from "./author";
+// import post from "./post";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -15,8 +14,7 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
-    siteData,
-    profiles,
-    services,
+    // author,
+    // post,
   ]),
 });
