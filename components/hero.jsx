@@ -10,6 +10,7 @@ export default function Hero({ heroTitle, heroImageUrl }) {
             alt="hero image"
             layout="fill"
             objectFit="cover"
+            priority
           />
         </div>
       </div>
