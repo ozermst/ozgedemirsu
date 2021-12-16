@@ -7,14 +7,12 @@ export default function Methodology() {
       <div className="methodology container">
         <div className="image">
           <Image
-            // src={OZGE_IMAGE_2_URL}
-            src="/images/ozge2.jpeg"
+            src={OZGE_IMAGE_2_URL}
             alt="Özgenin fotoğrafı"
             layout="fill"
             objectFit="cover"
             priority
           />
-          {/* <Avatar imageUrl={imageForMethodology} width="150px" /> */}
         </div>
         <div className="content">
           <p>
