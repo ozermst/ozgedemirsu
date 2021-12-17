@@ -3,8 +3,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "npm run build:sanity && pwd && npm run build:web",
+    "build:web": "next build",
+    "start:web": "next start",
+    "build:sanity": "cd studio && sanity build ../public/studio -y && cd ..",
+    "start:sanity": "cp .env ./studio/.env.development && cd studio && sanity start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -22,6 +25,7 @@
     "sharp": "^0.29.3"
   },
   "devDependencies": {
+    "@sanity/cli": "^2.23.1",
     "@types/node": "16.11.10",
     "@types/react": "17.0.37",
     "eslint": "7.32.0",
