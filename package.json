@@ -8,7 +8,6 @@
     "start:web": "next start",
     "build:sanity": "cd studio && sanity build ../public/studio -y && cd ..",
     "start:sanity": "cp .env ./studio/.env.development && cd studio && sanity start",
-    "postinstall": "lerna bootstrap",
     "lint": "next lint"
   },
   "dependencies": {
@@ -31,7 +30,6 @@
     "@types/react": "17.0.37",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4",
-    "lerna": "^4.0.0",
     "sass": "^1.45.0",
     "typescript": "4.5.2"
   }
