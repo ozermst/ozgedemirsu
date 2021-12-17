@@ -15,6 +15,7 @@ export default function Services() {
                 objectFit="cover"
               />
             </div>
+            <div className="title">{service.title}</div>
             <div>{service.description}</div>
           </div>
         ))}
